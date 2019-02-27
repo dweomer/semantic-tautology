@@ -24,3 +24,21 @@ _noun_
     * a recursive definition.
 
 A. Recursive. Definition.
+
+## Requirements
+
+    pip install git-semver
+
+## Usage
+
+To tag/release the [next patch](https://git-semver.readthedocs.io/en/stable/reference.html#git-semver-next-patch-or-p) version:
+
+    git tag v$(git semver -p)
+
+To tag/release the [next minor](https://git-semver.readthedocs.io/en/stable/reference.html#git-semver-next-patch-or-p) version:
+
+    git tag v$(git semver -m)
+
+To tag/release the [next major](https://git-semver.readthedocs.io/en/stable/reference.html#git-semver-next-patch-or-p) version:
+
+    git tag v$(git semver -M)
